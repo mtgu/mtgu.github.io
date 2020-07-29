@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mengting Gu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="owwwlab.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta name="description" content="A theme for faculty profile page" />
+        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/custom.css">
+
+
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+        <script type="text/javascript" src="js/masonry.min.js"></script>
+
+        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!--/Javascript files-->
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu"><i class="fa fa-bars"></i></a>
+
+            <div id="sidebar">
+                <div id="main-nav">
+                    <div id="nav-container">
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Mengting Gu</h2>
+                                <h3>Visa Research</h3>
+                            </div>
+
+                        </div>
+                        <ul id="navigation">
+                            <li>
+                            <a href="index.html">
+                                <div class="icon fa fa-user fa-lg"></div>
+                                <div class="text">About Me</div>
+                            </a>
+                            </li>
+                            <li class="currentmenu">
+                            <a href="publication.html">
+                                <div class="icon fa fa-edit"></div>
+                                <div class="text">Publication</div>
+                            </a>
+                            </li>
+                            <li>
+                            <!--<a href="portfolio.html">
+                                <div class="icon fa fa-picture-o"></div>
+                                <div class="text">Portfolio</div>
+                            </a>
+                          </li>-->
+
+                            <!--<li>
+                            <a href="teaching.html">
+                                <div class="icon fa fa-clock-o"></div>
+                                <div class="text">Teaching</div>
+                            </a>
+                            </li>-->
+
+
+                            <li>
+                            <a href="contact.html">
+                                <div class="icon fa fa-calendar"></div>
+                                <div class="text">Contact</div>
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href="Mengting_Gu.pdf">
+                                <div class="icon fa fa-download"></div>
+                                <div class="text">CV</div>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <div class="social-icons">
+                        <ul>
+                            <!--<li><a target="_blank" href="http://blog.yhwu.me">B</a></li>-->
+                            <li><a target="_blank" href="https://twitter.com/Mengting_Gu"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://scholar.google.com/citations?user=EB0q5vgAAAAJ&hl=en&oi=ao">G</li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/mengting-gu/"><i class="fa fa-linkedin"></i></a></li>
+                            <!--<li><a target="_blank" href="http://stackoverflow.com/users/357397/wdan"><i class="fa fa-stack-overflow"></i></a></li>-->
+                            <!--<li><a href="http://plus.google.com/101014470682652540957"><i class="fa fa-google-plus"></i></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main">
+
+                <div id="publications" class="page">
+                    <div class="page-container">
+                        <div class="pageheader">
+                            <div class="headercontent">
+                                <div class="section-container">
+
+                                    <h2 class="title">Publication</h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagecontents">
+
+                            <div class="section color-1" id="filters">
+                                <div class="section-container">
+                                    <div class="row">
+
+                                        <div class="col-md-3">
+                                            <h3>Filter by type:</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                                <option class="filter" value="all" selected>All types</option>
+                                                <option class="filter" value="jpaper">Journal Papers</option>
+                                                <option class="filter" value="cpaper">Conference Papers</option>
+                                                <!--<option class="filter" value="bookchapter">Book Chapters</option>-->
+                                                <!--<option class="filter" value="book">Books</option>-->
+                                                <!-- <option class="filter" value="report">Reports</option>
+                                                <option class="filter" value="tpaper">Technical Papers</option> -->
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-3" id="sort">
+                                            <span>Sort by year:</span>
+                                            <div class="btn-group pull-right">
+
+                                                <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default"><i class="fa fa-sort-numeric-asc"></i></button>
+                                                <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default"><i class="fa fa-sort-numeric-desc"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<div class="section color-2" id="pub-grid">
+                                <div class="section-container">
+                                   <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix cpaper" data-year="2020">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="publications/dysat_wsdm20.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">DySAT: Deep Neural Representation Learning on Dynamic Graphs via Self-Attention Networks <span class="hm">Oral</span></h4>
+                                                        <div
+                                                        class="pubauthor">Aravind Sankar, <strong>Yanhong Wu</strong>, Liang Gou, Wei Zhang, and Hao Yang</div>
+                                                        <div class="pubcite">
+                                                            <span class="label
+                                                                label-warning">Conference papers</span>The 13th ACM International WSDM Conference (WSDM'20)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Learning node representations in graphs is important for many applications such as link prediction, node classification, and community detection. Previous graph representation learning methods mainly focus on static graphs while many real-world graphs are dynamic and evolve over time. This complex time-varying structures makes it challenging to learn good node representations over time.
+We present Dynamic Self-Attention Network (DySAT), a novel neural architecture that learns node representations to capture dynamic graph structural evolution. Specifically, DySAT computes node representations by jointly employing self-attention layers along two dimensions: structural neighborhood and temporal dynamics. Compared with state-of-the-art recurrent methods modeling graph evolution, dynamic self-attention is efficient, while achieving consistently superior performance. We conduct link prediction experiments on two graph types: communication networks and bipartite rating networks. Our results show that DySAT has significant performance gains over several state-of-the-art graph embedding baselines, in both single and multi-step link prediction tasks. We also conduct an ablation study that shows the effectiveness of both the structural and temporal self-attentional layers.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+
+                                    <!--<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix cpaper" data-year="2020">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="publications/pacivis20.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                            <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Visual Interpretation of Recurrent Neural Network on Multi-dimensional Time-series Forecast</h4>
+                                                        <div class="pubauthor">Qiaomu Shen, <strong>Yanhong Wu</strong>, Yuzhe Jiang, Wei Zeng, Alexis K H Lau, Anna Vianova, and Huamin Qu</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Papers</span>PacificVis'20: IEEE Pacific Visualization Symposium 2020</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Recent attempts at utilizing visual analytics to interpret Recurrent Neural Networks (RNNs) mainly focus on natural language processing (NLP) tasks that take symbolic sequences as input. However, many real-world problems like environment pollution forecasting apply RNNs on sequences of multi-dimensional data where each dimension represents an individual feature with semantic meaning such as PM2.5 and SO2. RNN interpretation on multi-dimensional sequences is challenging as users need to analyze what features are important at different time steps to better understand model behavior and gain trust in prediction. This requires effective and scalable visualization methods to reveal the complex many-to-many relations between hidden units and features. In this work, we propose a visual analytics system to interpret RNNs on multi-dimensional time-series forecasts. Specifically, to provide an overview to reveal the model mechanism, we propose a technique to estimate the hidden unit response by measuring how different feature selections affect the hidden unit output distribution. We then cluster the hidden units and features based on the response embedding vectors. Finally, we propose a visual analytics system which allows users to visually explore the model behavior from the global and individual levels.  We demonstrate the effectiveness of our approach with case studies using air pollutant forecast applications.</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+
+
+                                   <!--<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2019">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="publications/oui-eurovis19.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Oui! Outlier Interpretation on Multi-dimensional Data via Visual Analytics</h4>
+                                                        <div
+                                                        class="pubauthor">Xun Zhao, Weiwei Cui, <strong>Yanhong Wu</strong>, Haidong Zhang, Huamin Qu, and Dongmei Zhang</div>
+                                                        <div class="pubcite">
+                                                            <span class="label
+                                                                label-success">Journal Papers</span>CGF: Computer Graphics Forum (Proceedings of EuroVis 2019)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Outliers, the data instances that do not conform with normal patterns in a dataset, are widely studied in various domains, such as cybersecurity, social analysis, and public health. By detecting and analyzing outliers, users can either gain insights into abnormal patterns or purge the data of errors. However, different domains usually have different considerations with respect to outliers. Understanding the defining characteristics of outliers is essential for users to select and filter appropriate outliers based on their domain requirements. Unfortunately, most existing work focuses on the efficiency and accuracy of outlier detection, neglecting the importance of outlier interpretation. To address these issues, we propose Oui, a visual analytic system that helps users understand, interpret, and select the outliers detected by various algorithms. We also present a usage scenario on a real dataset and a qualitative user study to demonstrate the effectiveness and usefulness of our system.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+
+
+                                   <!--<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="publications/iforest-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>
+                                                            <a href="publications/iforest_vast18.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="http://vis.cse.ust.hk/iforest/" class="tooltips" title="Demo Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">iForest: Interpreting Random Forests via Visual Analytics</h4>
+                                                        <div
+                                                        class="pubauthor">Xun Zhao, <strong>Yanhong Wu</strong>, Dik Lun Lee, and Weiwei Cui</div>
+                                                        <div class="pubcite">
+                                                            <span class="label
+                                                                label-success">Journal Papers</span>TVCG: IEEE Transactions on Visualization and Computer Graphics (Proceedings of IEEE VIS 2018)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>As an ensemble model that consists of many independent decision trees, random forests generate predictions by feeding the input to internal trees and summarizing their outputs. The ensemble nature of the model helps random forests outperform any individual decision tree. However, it also leads to a poor model interpretability, which significantly hinders the model from being used in fields that have little or zero tolerance of errors, such as medical diagnosis and financial fraud detection. The interpretation challenges stem from the variety and complexity of the contained decision trees. Each decision tree has its unique structure and properties, such as the features used in the tree and the feature threshold in each tree node. Thus, a data input may lead to a variety of decision paths. To understand how a final prediction is achieved, it is desired to understand and compare all decision paths in the context of all tree structures, which is a huge challenge for any users. In this paper, we propose a visual analytic system aiming at interpreting random forest models and predictions. In addition to providing users with all the tree information, we summarize the decision paths in random forests, which eventually reflect the working mechanism of the model and reduce users’ mental burden of interpretation. To demonstrate the usefulness and effectiveness of our system, two usage scenarios and a qualitative user study are conducted.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2020">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <!--<a href="https://vimeo.com/303205553" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>-->
+                                                            <a href="publications/Shaping.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="https://academic.oup.com/bib/article-abstract/21/3/836/5381766" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Shaping the nebulous enhancer in the era of high-throughput assays and genome editing</h4>
+                                                        <div
+                                                        class="pubauthor">Edwin Yu-Kiu Ho*, Qin Cao*, <strong>Mengting Gu</strong>, Ricky Wai-Lun Chan, Qiong Wu, Mark Gerstein, Kevin Y Yip</div>
+                                                        <div class="pubcite">
+                                                            <span class="label
+                                                                label-success">Journal Papers</span>Briefings in Bioinformatics (2020)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Since the 1st discovery of transcriptional enhancers in 1981, their textbook definition has remained largely unchanged in the past 37 years. With the emergence of high-throughput assays and genome editing, which are switching the paradigm from bottom-up discovery and testing of individual enhancers to top-down profiling of enhancer activities genome-wide, it has become increasingly evidenced that this classical definition has left substantial gray areas in different aspects. Here we survey a representative set of recent research articles and report the definitions of enhancers they have adopted. The results reveal that a wide spectrum of definitions is used usually without the definition stated explicitly, which could lead to difficulties in data interpretation and downstream analyses. Based on these findings, we discuss the practical implications and suggestions for future studies.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2019">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <!--<a href="https://vimeo.com/303201595" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>-->
+                                                            <a href="https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-019-1724-1" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1724-1?optIn=true" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Genomics and data science: an application within an umbrella</h4>
+                                                        <div
+                                                        class="pubauthor">Fábio CP Navarro, Hussein Mohsen, Chengfei Yan, Shantao Li, <strong>Mengting Gu</strong>, William Meyerson, Mark Gerstein</div>
+                                                        <div class="pubcite">
+                                                            <span class="label label-success">Journal Papers</span>Genome Biology (2019)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Data science allows the extraction of practical insights from large-scale data. Here, we contextualize it as an umbrella term, encompassing several disparate subdomains. We focus on how genomics fits as a specific application subdomain, in terms of well-known 3 V data and 4 M process frameworks (volume-velocity-variety and measurement-mining-modeling-manipulation, respectively). We further analyze the technical and cultural “exports” and “imports” between genomics and other data-science subdomains (e.g., astronomy). Finally, we discuss how data value, privacy, and ownership are pressing issues for data science applications, in general, and are especially relevant to genomics, due to the persistent nature of DNA.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+				</div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2019">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <!--<a href="publications/eurovis18-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>-->
+                                                            <a href="publications/MicroRNA-dependent.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="https://www.nature.com/articles/s41556-019-0272-y" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">MicroRNA-dependent regulation of biomechanical genes establishes tissue stiffness homeostasis</h4>
+                                                        <div
+                                                        class="pubauthor">Albertomaria Moro*, Tristan P Driscoll*, Liana C Boraas, William Armero, Dionna M Kasper, Nicolas Baeyens, Charlene Jouy, Venkatesh Mallikarjun, Joe Swift, Sang Joon Ahn, Donghoon Lee, Jing Zhang, <strong>Mengting Gu</strong>, Mark Gerstein, Martin Schwartz, Stefania Nicoli</div>
+                                                        <div class="pubcite">
+                                                            <span class="label label-success">Journal Papers</span>Nature Cell Biology (2019)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Vertebrate tissues exhibit mechanical homeostasis, showing stable stiffness and tension over time and recovery after changes in mechanical stress. However, the regulatory pathways that mediate these effects are unknown. A comprehensive identification of Argonaute 2-associated microRNAs and mRNAs in endothelial cells identified a network of 122 microRNA families that target 73 mRNAs encoding cytoskeletal, contractile, adhesive and extracellular matrix (CAM) proteins. The level of these microRNAs increased in cells plated on stiff versus soft substrates, consistent with homeostasis, and suppressed targets via microRNA recognition elements within the 3′ untranslated regions of CAM mRNAs. Inhibition of DROSHA or Argonaute 2, or disruption of microRNA recognition elements within individual target mRNAs, such as connective tissue growth factor, induced hyper-adhesive, hyper-contractile phenotypes in endothelial and fibroblast cells in vitro, and increased tissue stiffness, contractility and extracellular matrix deposition in the zebrafish fin fold in vivo. Thus, a network of microRNAs buffers CAM expression to mediate tissue mechanical homeostasis.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2017">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="publications/skylens-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>
+                                                            <a href="publications/skylens_vast17.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="http://zhaoxun.me/skylens" class="tooltips" title="Project Page Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">SkyLens: Visual Analysis of Skyline on Multi-dimensional Data</h4>
+                                                        <div
+                                                        class="pubauthor">Xun Zhao, <strong>Yanhong Wu</strong>, Weiwei Cui, Xinnan Du, Yuan Chen, Yong Wang, Dik Lun Lee, and Huamin Qu</div>
+                                                        <div class="pubcite">
+                                                            <span class="label
+                                                                label-success">Journal Papers</span>TVCG: IEEE Transactions on Visualization and Computer Graphics (Proceedings of IEEE VIS 2017)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Skyline queries have wide-ranging applications in fields that involve multi-criteria decision making, including tourism, retail industry, and human resources. By automatically removing incompetent candidates, skyline queries allow users to focus on a subset of superior data items (i.e., the skyline), thus reducing the decision-making overhead. However, users are still required to interpret and compare these superior items manually before making a successful choice. This task is challenging because of two issues. First, people usually have fuzzy, unstable, and inconsistent preferences when presented with multiple candidates. Second, skyline queries do not reveal the reasons for the superiority of certain skyline points in a multi-dimensional space. To address these issues, we propose SkyLens, a visual analytic system aiming at revealing the superiority of skyline points from different perspectives and at different scales to aid users in their decision making. Two scenarios demonstrate the usefulness of SkyLens on two datasets with a dozen of attributes. A qualitative study is also conducted to show that users can efficiently accomplish skyline understanding and comparison tasks with SkyLens.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="https://science.sciencemag.org/content/sci/362/6420/eaat8464.full.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="https://science.sciencemag.org/content/362/6420/eaat8464.abstract" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <!--<a href="publications/infovis16-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>-->
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Comprehensive functional genomic resource and integrative model for the human brain</h4>
+                                                        <div
+                                                        class="pubauthor">Daifeng Wang*, Shuang Liu*, Jonathan Warrell*, Hyejung Won*, Xu Shi*, Fabio CP Navarro*, Declan Clarke*, <strong>Mengting Gu</strong>*, Prashant Emani*, Yucheng T Yang, Min Xu, Michael J Gandal, Shaoke Lou, Jing Zhang, Jonathan J Park, Chengfei Yan, Suhn Kyong Rhie, Kasidet Manakongtreecheep, Holly Zhou, Aparna Nathan, Mette Peters, Eugenio Mattei, Dominic Fitzgerald, Tonya Brunetti, Jill Moore, Yan Jiang, Kiran Girdhar, Gabriel E Hoffman, Selim Kalayci, Zeynep H Gümüş, Gregory E Crawford, Panos Roussos, Schahram Akbarian, Andrew E Jaffe, Kevin P White, Zhiping Weng, Nenad Sestan, Daniel H Geschwind, James A Knowles, Mark B Gerstein, PsychENCODE Consortium</div>
+                                                        <div class="pubcite">
+                                                            <span class="label label-success">Journal Papers</span>Science (2018)</div>
+                                                        </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Despite progress in defining genetic risk for psychiatric disorders, their molecular mechanisms remain elusive. Addressing this, the PsychENCODE Consortium has generated a comprehensive online resource for the adult brain across 1866 individuals. The PsychENCODE resource contains ~79,000 brain-active enhancers, sets of Hi-C linkages, and topologically associating domains; single-cell expression profiles for many cell types; expression quantitative-trait loci (QTLs); and further QTLs associated with chromatin, splicing, and cell-type proportions. Integration shows that varying cell-type proportions largely account for the cross-population variation in expression (with >88% reconstruction accuracy). It also allows building of a gene regulatory network, linking genome-wide association study variants to genes (e.g., 321 for schizophrenia). We embed this network into an interpretable deep-learning model, which improves disease prediction by ~6-fold versus polygenic risk scores and identifies key genes and pathways in psychiatric disorders.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="publications/Network.pdf" class="tooltips" title="Paper" target="_blank">
+                                                              <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <!--<a href="publications/vast16-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>-->
+                                                            <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-biodatasci-080917-013444" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Network analysis as a grand unifier in biomedical data science</h4>
+                                                        <div
+                                                        class="pubauthor">Patrick McGillivray, Declan Clarke, William Meyerson, Jing Zhang, Donghoon Lee, <strong>Mengting Gu</strong>, Sushant Kumar, Holly Zhou, Mark Gerstein</div>
+                                                        <div
+                                                             class="pubcite"><span
+                                                             class="label label-success">Journal Papers</span>Annual Review of Biomedical Data Science (2018)</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Biomedical data scientists study many types of networks, ranging from those formed by neurons to those created by molecular interactions. People often criticize these networks as uninterpretable diagrams termed hairballs; however, here we show that molecular biological networks can be interpreted in several straightforward ways. First, we can break down a network into smaller components, focusing on individual pathways and modules. Second, we can compute global statistics describing the network as a whole. Third, we can compare networks. These comparisons can be within the same context (e.g., between two gene regulatory networks) or cross-disciplinary (e.g., between regulatory networks and governmental hierarchies). The latter comparisons can transfer a formalism, such as that for Markov chains, from one context to another or relate our intuitions in a familiar setting (e.g., social networks) to the relatively unfamiliar molecular context. Finally, key aspects of molecular networks are dynamics and evolution, i.e., how they evolve over time and how genetic variants affect them. By studying the relationships between variants in networks, we can begin to interpret many common diseases, such as cancer and heart disease.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2017">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <!--<a href="publications/chi16-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>-->
+                                                            </a>
+                                                            <a href="publications/Dynamic.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="https://genome.cshlp.org/content/27/7/1184.short" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                            <!--                                                             <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                                </a> -->
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Dynamic RNA–protein interactions underlie the zebrafish maternal-to-zygotic transition <!--<span class="hm">Honorable Mention of Best Paper</span>--></h4>
+                                                        <div
+                                                        class="pubauthor">Vladimir Despic, Mario Dejung, <strong>Mengting Gu</strong>, Jayanth Krishnan, Jing Zhang, Lydia Herzel, Korinna Straube, Mark B Gerstein, Falk Butter, Karla M Neugebauer</div>
+                                                        <div
+                                                             class="pubcite"><span class="label label-success">Journal Papers</span>Genome Research (2017)</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>During the maternal-to-zygotic transition (MZT), transcriptionally silent embryos rely on post-transcriptional regulation of maternal mRNAs until zygotic genome activation (ZGA). RNA-binding proteins (RBPs) are important regulators of post-transcriptional RNA processing events, yet their identities and functions during developmental transitions in vertebrates remain largely unexplored. Using mRNA interactome capture, we identified 227 RBPs in zebrafish embryos before and during ZGA, hereby named the zebrafish MZT mRNA-bound proteome. This protein constellation consists of many conserved RBPs, some of which are potential stage-specific mRNA interactors that likely reflect the dynamics of RNA–protein interactions during MZT. The enrichment of numerous splicing factors like hnRNP proteins before ZGA was surprising, because maternal mRNAs were found to be fully spliced. To address potentially unique roles of these RBPs in embryogenesis, we focused on Hnrnpa1. iCLIP and subsequent mRNA reporter assays revealed a function for Hnrnpa1 in the regulation of poly(A) tail length and translation of maternal mRNAs through sequence-specific association with 3′ UTRs before ZGA. Comparison of iCLIP data from two developmental stages revealed that Hnrnpa1 dissociates from maternal mRNAs at ZGA and instead regulates the nuclear processing of pri-mir-430 transcripts, which we validated experimentally. The shift from cytoplasmic to nuclear RNA targets was accompanied by a dramatic translocation of Hnrnpa1 and other pre-mRNA splicing factors to the nucleus in a transcription-dependent manner. Thus, our study identifies global changes in RNA–protein interactions during vertebrate MZT and shows that Hnrnpa1 RNA-binding activities are spatially and temporally coordinated to regulate RNA metabolism during early development.</p> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2017">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <!--<a href="publications/egoslider_vis15-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>-->
+                                                            <a href="publications/MicroRNAs.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="https://www.sciencedirect.com/science/article/pii/S153458071730117X" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                            <!--                                                             <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                                </a> -->
+                                                        </div>
+
+                                                        <h4 class="pubtitle">MicroRNAs Establish Uniform Traits during the Architecture of Vertebrate Embryos</h4>
+                                                        <div class="pubauthor">Dionna M Kasper, Albertomaria Moro, Emma Ristori, Anand Narayanan, Guillermina Hill-Teran, Elizabeth Fleming, Miguel Moreno-Mateos, Charles E Vejnar, Jing Zhang, Donghoon Lee, <strong>Mengting Gu</strong>, Mark Gerstein, Antonio Giraldez, Stefania Nicoli</div>
+                                                        <div
+                                                             class="pubcite"><span class="label label-success">Journal Papers</span>Developmental Cell (2017)</div>
+
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Proper functioning of an organism requires cells and tissues to behave in uniform, well-organized ways. How this optimum of phenotypes is achieved during the development of vertebrates is unclear. Here, we carried out a multi-faceted and single-cell resolution screen of zebrafish embryonic blood vessels upon mutagenesis of single and multi-gene microRNA (miRNA) families. We found that embryos lacking particular miRNA-dependent signaling pathways develop a vascular trait similar to wild-type, but with a profound increase in phenotypic heterogeneity. Aberrant trait variance in miRNA mutant embryos uniquely sensitizes their vascular system to environmental perturbations. We discovered a previously unrecognized role for specific vertebrate miRNAs to protect tissue development against phenotypic variability. This discovery marks an important advance in our comprehension of how miRNAs function in the development of higher organisms.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix jpaper" data-year="2014">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <!--<a href="publications/pacivis15-slides.pdf" class="tooltips" title="Slides" target="_blank">
+                                                                <i class="icon fa fa-slideshare"></i>
+                                                            </a>-->
+                                                            <a href="https://link.springer.com/content/pdf/10.1007/s40484-014-0031-9.pdf" class="tooltips" title="Paper" target="_blank">
+                                                                <i class="icon fa fa-file-text-o"></i>
+                                                            </a>
+                                                            <a href="https://link.springer.com/article/10.1007/s40484-014-0031-9" class="tooltips" title="Journal Link" target="_blank">
+                                                                <i class="icon fa fa-link"></i>
+                                                            </a>
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon fa fa-plus-square-o"></i>
+                                                            </a>
+                                                            <!--                                                             <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                                </a> -->
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Exon expression QTL (eeQTL) analysis highlights distant genomic variations associated with splicing regulation</h4>
+                                                        <div class="pubauthor">Leying Guan, Qian Yang, <strong>Mengting Gu</strong>,  Liang Chen, Xuegong Zhang</div>
+                                                        <div
+                                                            class="pubcite"><span class="label label-success">Journal Papers</span>Quantitative Biology (2014)</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Alternative splicing is a ubiquitous mechanism of post-transcriptional regulation of gene expression and produces multiple isoforms from the same genes. Expression quantitative trait loci (eQTL) has been a major method for finding associations between gene expression and genomic variations. Differences in alternative splicing isoforms are resulted from differences in the expression of exons. We propose to use exon expression QTL (eeQTL) to study the genomic variations that are associated with splicing regulation. A stringent criterion was adopted to study gene-level eQTLs and exon-level eeQTLs for both cis- and trans- factors. From experiments on an RNA-sequencing (RNA-Seq) data set of HapMap samples, we observed that compared with eQTLs, more eeQTL trans-factors can be found than cis-factors, and many of the eeQTLs cannot be found at the gene level. This work highlights that the regulation of exons adds another layer of regulation on gene expression, and that eeQTL analysis is a new approach for investigating genome-wide genomic variations that are involved in the regulation of alternative splicing.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </body>
+</html>
